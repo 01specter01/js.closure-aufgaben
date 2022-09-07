@@ -51,9 +51,27 @@ for (var i = 0; i < 3; i++) {
 console.log("3,3,3");
 console.log("---------------");
 console.log("Aufgabe 5 Web");
+function createIncrement() {
+    let count = 0;
+    function increment() {
+        count++;
+    }
+    let message = `Count is ${count}`;
+    function log() {
+        console.log(message);
+    }
 
+    return [increment, log];
+}
+const [increment, log] = createIncrement();
+increment();
+increment();
+increment();
+log(); // What is logged?
+console.log("Antwort: count is 0");
 console.log("---------------");
 console.log("Aufgabe 6 Web");
+
 console.log("---------------");
 console.log("Aufgabe 7 Web");
 console.log("---------------");
