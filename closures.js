@@ -21,7 +21,9 @@ function guessingGame(amount) {
             if (guess > answer) return "Your guess is too high!";
             if (guess < answer) return "Your guess is too low!";
         } else {
-            return "start a new game";
+            return (
+                "Wrong! start a new game, the ansewer wold have been:" + answer
+            );
         }
     };
 }
@@ -32,3 +34,26 @@ console.log(firstGame(10));
 console.log(firstGame(8));
 console.log(firstGame(4));
 console.log(firstGame(2));
+
+console.log("---------------");
+console.log("Aufgabe 2 Web");
+console.log("Antwort ist 1");
+console.log("---------------");
+console.log("Aufgabe 3 Web");
+console.log("1,0");
+console.log("---------------");
+console.log("Aufgabe 4 Web");
+for (var i = 0; i < 3; i++) {
+    setTimeout(function log() {
+        console.log(i); // What is logged?
+    }, 1000);
+}
+console.log("3,3,3");
+console.log("---------------");
+console.log("Aufgabe 5 Web");
+
+console.log("---------------");
+console.log("Aufgabe 6 Web");
+console.log("---------------");
+console.log("Aufgabe 7 Web");
+console.log("---------------");
